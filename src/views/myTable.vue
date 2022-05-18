@@ -123,6 +123,7 @@ export default {
             }
 
         ]
+        this.tableSettings.total = this.tableData.length
       
     }
 }

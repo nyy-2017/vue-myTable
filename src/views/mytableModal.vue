@@ -50,7 +50,7 @@
                 </el-col>
             </el-row>
 
-            <el-form-item>
+            <el-form-item v-if="titles === '修改'">
                 <el-button type="primary" @click="submitForm('fromData')">立即创建</el-button>
                 <el-button @click="resetForm('fromData')">重置</el-button>
             </el-form-item>

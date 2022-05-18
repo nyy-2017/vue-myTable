@@ -4,10 +4,11 @@
       :height="settings.height"
       v-loading="settings.isLoading"
       :border="settings.isBorder"
+      stripe
+      :header-cell-style="{background: '#f8f8f8', color:'#606266'}"
       @selection-change="e => handleClick('select',e)"
       :data="data"
-      style="width: 100%"
-    >
+      style="width: 100%">
       <el-table-column
         v-if="settings.isSelection"
         width="55"
@@ -63,8 +64,8 @@
       @size-change="e => handleClick('pageSize', e)"
       @current-change="e => handleClick('currentPage', e)"
       :current-page="currentPage"
-      :page-sizes="[20, 50, 100, 200]"
-      :page-size="20"
+      :page-sizes="[10, 20, 50, 100, 200]"
+      :page-size="10"
       layout="total, sizes, prev, pager, next, jumper"
       :total="settings.total"
     ></el-pagination>

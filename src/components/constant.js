@@ -3,8 +3,8 @@ const tableSettings = {
   height: "71vh",
   title: "自愿加班/请假申请表",
   isPagination: true,
-  total: 100,
-  // currentPage: 2
+  total: 0,
+  currentPage: 1,
   isIndex: true,
   isSelection: true
 };
@@ -26,7 +26,7 @@ const tableHeader = [
   {
     prop: "action",
     label: "操作",
-    width: "500",
+    width: "220",
     arr: [{ type: "show", name: "查看" },
     { type: "delete", name: "删除" },
     { type: "edit", name: "修改" }
