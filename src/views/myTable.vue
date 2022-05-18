@@ -26,12 +26,15 @@ export default {
     methods: {
         handleSelect(type, e) {
             console.log("e:", type, e);
-            if (type == 'select'){
+            if (type === 'select'){
                 this.selecteds = e
-            } else if (type == 'warning') {
+            } 
+            if (type === 'show') {
                 this.$refs.myTableModal1.modal1 = true;
                 this.$refs.myTableModal1.titles = '查看详情';
-            } else if (type == 'edit') {
+                this.$refs.myTableModal1.fromData = e
+            } 
+            if (type === 'edit') {
                 this.$refs.myTableModal1.modal1 = true;
                 this.$refs.myTableModal1.titles = '修改';
                 this.$refs.myTableModal1.fromData = e

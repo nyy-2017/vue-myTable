@@ -48,7 +48,7 @@
                 :type="item2.type == 'delete' ? 'danger' : 'primary'"
                 v-for="item2 in item.arr"
                 :key="item2.type"
-                @click="handleClick(item2.type, scope.row,scope.$index)"
+                @click="handleClick(item2.type, scope.row, scope.$index)"
                 >{{ item2.name }}</el-button
               >
             </template>
@@ -147,7 +147,7 @@ export default {
   },
   methods: {
     handleClick(type, e) {
-      console.log("type:", e)
+      console.log("type:", type,"e:", e)
       this.$emit("select", type, e);
     }
   }

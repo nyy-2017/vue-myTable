@@ -27,7 +27,7 @@ const tableHeader = [
     prop: "action",
     label: "操作",
     width: "500",
-    arr: [{ type: "warning ", name: "查看" },
+    arr: [{ type: "show", name: "查看" },
     { type: "delete", name: "删除" },
     { type: "edit", name: "修改" }
     ]
